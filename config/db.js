@@ -3,7 +3,7 @@ const mysql = require("mysql2");
 const db = mysql.createPool({
     host: "localhost",
     user: "root",
-    password: "ikramchouchou31",
+    password: "process.env.DB_PASSWORD",
     database: "blood_donation_db",
     waitForConnections: true,
     connectionLimit: 10,
